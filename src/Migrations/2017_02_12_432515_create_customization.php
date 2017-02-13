@@ -20,7 +20,7 @@ class CreateCustomization extends Migration
             $table->text('js')->nullable();
             $table->string('color')->nullable();
             $table->string('background_color')->nullable();
-            $table->string('navbar_color')->nullable();
+            $table->string('header_color')->nullable();
             $table->timestamps();
         });
 
@@ -29,7 +29,7 @@ class CreateCustomization extends Migration
             'js' => null,
             'color' => '#000000',
             'background_color' => '#ffffff',
-            'navbar_color' => '#0275d8',
+            'header_color' => '#0275d8',
         ]);
 
     }

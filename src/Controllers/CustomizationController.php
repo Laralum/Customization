@@ -29,7 +29,7 @@ class CustomizationController extends Controller
         Customization::first()->update([
             'color'             => $request->input('color'),
             'background_color'  => $request->input('background_color'),
-            'navbar_color'      => $request->input('navbar_color'),
+            'header_color'      => $request->input('header_color'),
         ]);
 
         return redirect()->route('laralum::customization.index')->with('success', __('laralum_customization::general.updated_settings'));

@@ -8,6 +8,6 @@ class Customization extends Model
 {
     public $table = 'laralum_customization';
     public $fillable = [
-        'css', 'js', 'color', 'background_color', 'navbar_color',
+        'css', 'js', 'color', 'background_color', 'header_color',
     ];
 }
