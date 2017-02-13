@@ -29,7 +29,7 @@ class CreateCustomization extends Migration
             'js' => null,
             'color' => '#000000',
             'background_color' => '#ffffff',
-            'header_color' => '#0275d8',
+            'header_color' => '#F44336',
         ]);
 
     }
