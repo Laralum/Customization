@@ -1,0 +1,7 @@
+{
+    "name": "Customization",
+    "item": {
+        "text": "Customization",
+        "route": "laralum::customization.index"
+    }
+}
