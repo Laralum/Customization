@@ -11,16 +11,6 @@ class CustomizationController extends Controller
     /**
      * Display the customization settings.
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('laralum_customization::index', ['customization' => Customization::first()]);
-    }
-
-    /**
-     * Display the customization settings.
-     *
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
@@ -32,6 +22,6 @@ class CustomizationController extends Controller
             'header_color'      => $request->input('header_color'),
         ]);
 
-        return redirect()->route('laralum::customization.index')->with('success', __('laralum_customization::general.updated_settings'));
+        return redirect()->route('laralum::settings.index', ['p' => 'Customization'])->with('success', __('laralum_customization::general.updated_settings'));
     }
 }

@@ -6,6 +6,5 @@ Route::group([
         'namespace' => 'Laralum\Customization\Controllers',
         'as' => 'laralum::'
     ], function () {
-        Route::get('customization', 'CustomizationController@index')->name('customization.index');
         Route::post('customization', 'CustomizationController@update')->name('customization.index.update');
 });
