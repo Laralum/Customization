@@ -18,9 +18,9 @@ class CreateCustomization extends Migration
             $table->increments('id');
             $table->text('css')->nullable();
             $table->text('js')->nullable();
-            $table->string('color')->nullable();
-            $table->string('background_color')->nullable();
-            $table->string('header_color')->nullable();
+            // $table->string('color')->nullable();
+            // $table->string('background_color')->nullable();
+            $table->string('navbar_color')->nullable();
             $table->timestamps();
         });
 

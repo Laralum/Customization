@@ -17,9 +17,9 @@ class CustomizationController extends Controller
     public function update(Request $request)
     {
         Customization::first()->update([
-            'color'             => $request->input('color'),
-            'background_color'  => $request->input('background_color'),
-            'header_color'      => $request->input('header_color'),
+            // 'color'             => $request->input('color'),
+            // 'background_color'  => $request->input('background_color'),
+            'navbar_color'      => $request->input('navbar_color'),
         ]);
 
         return redirect()->route('laralum::settings.index', ['p' => 'Customization'])->with('success', __('laralum_customization::general.updated_settings'));

@@ -17,8 +17,9 @@ return [
     'back_color'        => 'Background Color',
     'back_color_ph'     => 'Enter a hex color here',
     'back_color_hp'     => 'This color will be applied as the background color of the administration panel.',
-    'header_color'      => 'Header Background Color',
-    'header_color_ph'   => 'Enter a hex color here',
-    'header_color_hp'   => 'This color will be used as the navigation bar and header on the top of the administration panel.',
+    'navbar_color'      => 'Navigation Background Color',
+    'navbar_color_ph'   => 'Enter a hex color here',
+    'navbar_color_hp'   => 'This color will be used as the navigation bar on the top of the administration panel.',
     'updated_settings'  => 'The customization settings have been saved.',
+    'save'              => 'Save customization settings',
 ];
