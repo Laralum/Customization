@@ -2,6 +2,7 @@
     $customization = Laralum\Customization\Models\Customization::first();
 @endphp
 <div uk-grid>
+    @can('update', $customization)
     <div class="uk-width-1-1@s uk-width-1-5@l"></div>
     <div class="uk-width-1-1@s uk-width-3-5@l">
         <form class="uk-form-horizontal" method="POST" action="{{ route('laralum::customization.index.update') }}">
@@ -40,4 +41,21 @@
         </form>
     </div>
     <div class="uk-width-1-1@s uk-width-1-5@l"></div>
+    @else
+        <div class="uk-width-1-1@s">
+        <div class="content-padder content-background">
+            <div class="uk-section-small uk-section-default header">
+                <div class="uk-container uk-container-large">
+                    <h3><span class="ion-minus-circled"></span> @lang('laralum_customization::general.unauthorized_action')</h3>
+                    <p>
+                        @lang('laralum_customization::general.unauthorized_desc')
+                    </p>
+                    <p class="uk-text-meta">
+                        @lang('laralum_customization::general.contact_webmaster')
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    @endcan
 </div>

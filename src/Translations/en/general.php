@@ -22,4 +22,7 @@ return [
     'navbar_color_hp'   => 'This color will be used as the navigation bar on the top of the administration panel.',
     'updated_settings'  => 'The customization settings have been saved.',
     'save'              => 'Save customization settings',
+    'unauthorized_action'  => 'Unauthorized Action',
+    'unauthorized_desc'    => "You're not allowed to update customization settings.",
+    'contact_webmaster'    => 'If you think you should be able to update it, please contact webmaster.',
 ];
