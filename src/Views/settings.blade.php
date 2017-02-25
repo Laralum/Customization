@@ -1,8 +1,8 @@
 @php
-    $customization = Laralum\Customization\Models\Customization::first();
+    $customization = \Laralum\Customization\Models\Customization::first();
 @endphp
 <div uk-grid>
-    @can('access', $customization)
+    @can('access', \Laralum\Customization\Models\Customization::class)
     <div class="uk-width-1-1@s uk-width-1-5@l"></div>
     <div class="uk-width-1-1@s uk-width-3-5@l">
         <form class="uk-form-horizontal" method="POST" action="{{ route('laralum::customization.index.update') }}">
