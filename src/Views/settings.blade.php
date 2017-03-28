@@ -31,6 +31,14 @@
                     </div>
                 </div>
 
+                <div class="uk-margin">
+                    <label class="uk-form-label">@lang('laralum_customization::general.favicon')</label>
+                    <div class="uk-form-controls">
+                        <input value="{{ old('favicon', $customization->favicon ? $customization->favicon : '') }}" name="favicon" class="uk-input" type="text" placeholder="@lang('laralum_customization::general.favicon_ph')">
+                        <small class="uk-text-meta">@lang('laralum_customization::general.favicon_hp')</small>
+                    </div>
+                </div>
+
                 <div class="uk-margin uk-align-right">
                     <button type="submit" class="uk-button uk-button-primary">
                         <span class="ion-forward"></span>&nbsp; @lang('laralum_customization::general.save')

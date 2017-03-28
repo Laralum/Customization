@@ -21,15 +21,17 @@ class CreateCustomization extends Migration
             // $table->string('color')->nullable();
             // $table->string('background_color')->nullable();
             $table->string('navbar_color')->nullable();
+            $table->text('favicon')->nullable();
             $table->timestamps();
         });
 
         Customization::create([
             'css' => null,
             'js' => null,
-            'color' => '#000000',
-            'background_color' => '#ffffff',
-            'header_color' => '#F44336',
+            //'color' => '#000000',
+            //'background_color' => '#ffffff',
+            'navbar_color' => '#0F7AE5',
+            'favicon' => 'https://avatars1.githubusercontent.com/u/22253051',
         ]);
 
     }
