@@ -2,14 +2,10 @@
 
 namespace Laralum\Customization;
 
-
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Gate;
-
+use Illuminate\Support\ServiceProvider;
 use Laralum\Customization\Models\Customization;
 use Laralum\Customization\Policies\CustomizationPolicy;
-
-use Laralum\Permissions\PermissionsChecker;
 
 class CustomizationServiceProvider extends ServiceProvider
 {
@@ -31,8 +27,8 @@ class CustomizationServiceProvider extends ServiceProvider
         [
             'name' => 'Roles Access',
             'slug' => 'laralum::customization.access',
-            'desc' => "Grants access to laralum/customization module",
-        ]
+            'desc' => 'Grants access to laralum/customization module',
+        ],
     ];
 
     /**
@@ -55,9 +51,8 @@ class CustomizationServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/Migrations');
     }
 
-
     /**
-     * I cheated this comes from the AuthServiceProvider extended by the App\Providers\AuthServiceProvider
+     * I cheated this comes from the AuthServiceProvider extended by the App\Providers\AuthServiceProvider.
      *
      * Register the application's policies.
      *
@@ -69,7 +64,6 @@ class CustomizationServiceProvider extends ServiceProvider
             Gate::policy($key, $value);
         }
     }
-
 
     /**
      * Register the application services.

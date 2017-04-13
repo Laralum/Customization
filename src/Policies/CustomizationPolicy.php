@@ -2,8 +2,8 @@
 
 namespace Laralum\Customization\Policies;
 
-use Laralum\Users\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Laralum\Users\Models\User;
 
 class CustomizationPolicy
 {
@@ -25,7 +25,8 @@ class CustomizationPolicy
     /**
      * Determine if the current user can access roles module.
      *
-     * @param  mixed $user
+     * @param mixed $user
+     *
      * @return bool
      */
     public function access($user)
