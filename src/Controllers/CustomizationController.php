@@ -2,9 +2,9 @@
 
 namespace Laralum\Customization\Controllers;
 
-use Laralum\Customization\Models\Customization;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Laralum\Customization\Models\Customization;
 
 class CustomizationController extends Controller
 {
@@ -12,13 +12,14 @@ class CustomizationController extends Controller
      * Display the customization settings.
      *
      * @param \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request)
     {
         $this->validate($request, [
             'navbar_color' => 'max:255',
-            'favicon' => 'url|max:2000',
+            'favicon'      => 'url|max:2000',
         ]);
         Customization::first()->update([
             // 'color'             => $request->input('color'),

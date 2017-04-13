@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 use Laralum\Customization\Models\Customization;
 
 class CreateCustomization extends Migration
@@ -27,13 +27,12 @@ class CreateCustomization extends Migration
 
         Customization::create([
             'css' => null,
-            'js' => null,
+            'js'  => null,
             //'color' => '#000000',
             //'background_color' => '#ffffff',
             'navbar_color' => '#0F7AE5',
-            'favicon' => 'https://avatars1.githubusercontent.com/u/22253051',
+            'favicon'      => 'https://avatars1.githubusercontent.com/u/22253051',
         ]);
-
     }
 
     /**
