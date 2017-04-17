@@ -2,8 +2,8 @@
     "name": "laralum/customization",
     "description": "Customization module for laralum",
     "require": {
-		"laralum/laralum": "dev-master"
-	},
+	"laralum/laralum": "1.*"
+    },
     "license": "MIT",
     "authors": [
         {
