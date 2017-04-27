@@ -25,7 +25,7 @@ class CustomizationServiceProvider extends ServiceProvider
      */
     protected $permissions = [
         [
-            'name' => 'Roles Access',
+            'name' => 'Customization Access',
             'slug' => 'laralum::customization.access',
             'desc' => 'Grants access to laralum/customization module',
         ],
