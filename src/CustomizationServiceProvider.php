@@ -4,9 +4,9 @@ namespace Laralum\Customization;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
-use Laralum\Permissions\PermissionsChecker;
 use Laralum\Customization\Models\Customization;
 use Laralum\Customization\Policies\CustomizationPolicy;
+use Laralum\Permissions\PermissionsChecker;
 
 class CustomizationServiceProvider extends ServiceProvider
 {
@@ -50,7 +50,7 @@ class CustomizationServiceProvider extends ServiceProvider
         }
 
         $this->loadMigrationsFrom(__DIR__.'/Migrations');
-        
+
         // Make sure the permissions are OK
         PermissionsChecker::check($this->permissions);
     }
