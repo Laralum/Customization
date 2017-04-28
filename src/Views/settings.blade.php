@@ -53,7 +53,7 @@
         <div class="uk-width-1-1@s">
         <div class="content-padder content-background">
             <div class="uk-section-small uk-section-default header">
-                <div class="uk-container uk-container-large">
+                <div class="uk-container uk-container-large uk-text-center">
                     <h3><span class="ion-minus-circled"></span> @lang('laralum_customization::general.unauthorized_action')</h3>
                     <p>
                         @lang('laralum_customization::general.unauthorized_desc')
